@@ -1,5 +1,5 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
+#include "GraphicsScene.h"
 
 USING_NS_CC;
 
@@ -19,7 +19,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 		director->setOpenGLView(glview);
 	}
 
-	auto scene = HelloWorld::createScene();
+	auto scene = GraphicsScene::createScene();
 	director->runWithScene(scene);
 
 	return true;
