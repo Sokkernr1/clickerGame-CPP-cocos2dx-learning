@@ -19,7 +19,7 @@ bool GraphicsScene::init()
 	}
 
 	auto sprite = Sprite::create("decepticon.png");
-	sprite->setPosition(100.f, 100.f);
+	sprite->setPosition(getContentSize().width / 2 - sprite->getContentSize().width / 2, getContentSize().height / 2 - sprite->getContentSize().height / 2);
 	sprite->setAnchorPoint(Vec2(0, 0));
 	
 	this->addChild(sprite, 0);
