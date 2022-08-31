@@ -1,4 +1,4 @@
-#include "GraphicsScene.h"
+#include "GraphicsScene.hpp"
 
 USING_NS_CC;
 

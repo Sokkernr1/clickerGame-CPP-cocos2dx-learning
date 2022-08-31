@@ -1,5 +1,5 @@
-#include "AppDelegate.h"
-#include "GraphicsScene.h"
+#include "AppDelegate.hpp"
+#include "TouchScene.hpp"
 
 USING_NS_CC;
 
@@ -18,8 +18,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
 		glview->setFrameSize(640, 480);
 		director->setOpenGLView(glview);
 	}
-
-	auto scene = GraphicsScene::createScene();
+	
+	auto scene = TouchScene::createScene();
 	director->runWithScene(scene);
 
 	return true;

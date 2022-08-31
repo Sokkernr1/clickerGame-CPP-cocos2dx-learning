@@ -1,4 +1,4 @@
-#include "HelloWorldScene.h"
+#include "HelloWorldScene.hpp"
 
 USING_NS_CC;
 
