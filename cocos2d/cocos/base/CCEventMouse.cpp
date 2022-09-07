@@ -61,8 +61,10 @@ Vec2 EventMouse::getStartLocationInView() const
 
 // returns the current touch location in OpenGL coordinates
 Vec2 EventMouse::getLocation() const
-{ 
-    return Director::getInstance()->convertToGL(_point); 
+{
+	Vec2 pos = Director::getInstance()->convertToGL(_point);
+	pos.y = cocos2d::Director::getInstance()->getVisibleSize().height - pos.y;
+    return pos;
 }
 
 // returns the previous touch location in OpenGL coordinates

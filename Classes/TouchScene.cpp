@@ -33,8 +33,7 @@ bool TouchScene::init()
 		cocos2d::Size size = event->getCurrentTarget()->getContentSize();
 		cocos2d::Point origin = event->getCurrentTarget()->getPosition();
 	
-		auto clickLoc = convertToWorldSpace(mouseEvent->getLocation());
-		clickLoc.y = cocos2d::Director::getInstance()->getVisibleSize().height - clickLoc.y;
+		auto clickLoc = mouseEvent->getLocation();
 
 		auto clickRect = DrawNode::create();
 		
